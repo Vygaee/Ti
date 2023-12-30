@@ -1,7 +1,6 @@
 sqlalchemy
 pyowm
 lxml
-demjson
 PyLyrics
 #telegram
 zalgo_text
