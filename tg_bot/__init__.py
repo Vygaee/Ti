@@ -60,7 +60,7 @@ if ENV:
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
 
 else:
-    from tg_bot.config import Development as Config
+    from tg_bot.sample_config import Development as Config
     TOKEN = Config.API_KEY
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -95,11 +95,9 @@ else:
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
     DEL_CMDS = Config.DEL_CMDS
-    STRICT_GBAN = Config.STRICT_GBAN
     WORKERS = Config.WORKERS
     BAN_STICKER = Config.BAN_STICKER
-    ALLOW_EXCL = Config.ALLOW_EXCL
-    STRICT_GMUTE = Config.STRICT_GMUTE
+    ALLOW_EXCL = Config.ALLOW_EXCL  
    
 
 SUDO_USERS.add(OWNER_ID)
