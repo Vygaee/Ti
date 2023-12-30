@@ -11,12 +11,12 @@ class Config(object):
 
     # REQUIRED
     API_KEY = ""
-    OWNER_ID = "683538773" # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "ViruZs"
+    OWNER_ID = "940232666" # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "Usern4meDoesNotExist404"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
-    MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
+    SQLALCHEMY_DATABASE_URI = 'postgres://nhgsxgwz:qJt85u9URjxbVJnxIgECCU_TxYhYIHiK@mel.db.elephantsql.com/nhgsxgwz'  # needed for any database modules
+    MESSAGE_DUMP = -1001812373181  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
     WEBHOOK = False
@@ -41,4 +41,4 @@ class Production(Config):
 
 
 class Development(Config):
-    LOGGER = True
+    LOGGER = False
